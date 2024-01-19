@@ -1,6 +1,7 @@
 html {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: ivory
+    font-family: 'Courier New', Courier, monospace;
+    background-color: ivory;
+    box-sizing: border-box;
 }
 
 a {
@@ -12,7 +13,7 @@ a {
     padding: 10px;
     transition: color .5s, background-color .5s;
     border-radius: 5px;
-    box-shadow: 5px 5px darkgrey;
+    box-shadow: 5px 5px 5px darkgrey;
 }
 
 a:hover{
@@ -45,45 +46,72 @@ ul li {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #boxescont {
-    width: 75%;
+    width: 95%;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    grid-template-areas:
-    "c1 c1 c2"
-    "c3 c4 c4"
-    "c5 c5 c5"
+    grid-template: 1fr 1fr / 1fr 1fr;
+
 }
 
 #caixa1 {
-    grid-area: c1;
+
 }
 
 #caixa2 {
-    grid-area: c2;
+
 
 }
 
 #caixa3 {
-    grid-area: c3;
+
 }
 
 #caixa4 {
-    grid-area: c4;
+  
 }
 
 #caixa5 {
-    grid-area: c5;
+   
 }
 
 .textbox {
+    text-align: justify;
     border: 5px inset black;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
-    box-shadow: 8px 8px darkgrey;
+    box-shadow: 8px 8px 1px darkgrey;
     background-color: cornsilk;
+}
+
+#gallery {
+    margin: 5em 0em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#gallery img {
+    width: 15%;
+    box-shadow: 8px 8px 5px darkgrey;
+    border: 5px inset black;
+}
+
+#founders {
+    text-align: center;
+    border: 5px inset black;
+    width: 90;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 8px 8px 5px darkgrey;
+    background-color: cornsilk;
+}
+
+#founders h2 {
+    font-size: 2rem;
 }
