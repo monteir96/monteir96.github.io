@@ -45,7 +45,7 @@ p {
 #galleryflex .portrait{
     color: black;
     font-weight: bold;
-    background-image: url("/resources/images/goldbg.webp");
+    background-image: url("goldbg.webp");
     text-align: center;
     border: 5px ridge navy;
     border-radius: 10px;
@@ -60,7 +60,7 @@ p {
 
 
 #galleryflex .portrait img {
-    background-image: url("/resources/images/silver.jpg");
+    background-image: url("silver.jpg");
     background-position: center;
     border: 5px ridge navy;
     border-radius: 5px;
